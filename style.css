@@ -1,0 +1,119 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 242, 233, 1);
+}
+
+/*Tekst i footer*/
+h2{
+    text-transform: uppercase;
+    font-size:large;
+    text-align: center;
+    padding-top: 1%;
+}
+h3{
+    color:rgba(28, 38, 102, 1);
+    padding-bottom: 10%;
+    font-size: x-large;
+}
+
+/*Filtrering*/
+#filter{
+    padding-top: 2%;
+    padding-left: 10%;
+}
+.maalpers{
+    
+    background-color: rgba(236, 230, 208, 1);
+    border-radius: 30px;
+    padding: 0.5%;
+    padding-left: 0.8%;
+    padding-right: 0.8%;
+    margin-top: 0.5%;
+}
+#varianter{
+    margin-left: 10%;
+}
+.lodret{
+    width: 1px;
+    height: 100%;
+    background-color: black;
+    /*writing-mode: vertical-rl;
+    transform:scaleX(-1);*/
+}
+
+/*Footeren*/
+#fotop{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(236, 230, 208, 1);
+    padding: 3%;
+    height: auto;
+}
+
+/*footer dele med liste over links*/
+.folink{
+    justify-content: center;
+    padding: 2%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.folink a{
+    display: flex;
+    color: black;
+    margin-left: 5%;
+    line-height: 160%;
+}
+
+/*midterste del m. logo*/
+.fologo{
+    justify-content: center;
+    display: flex;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#foimg{ /* KAN IKKE FÅ DEN I MIDTEN?*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}
+
+#indsetmail{
+    margin-top: 4%;
+    height: 13%;
+    width:100%;
+    text-transform: inherit;
+}
+#fonyhedsbrev{
+    margin-top: 3%;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(255, 35, 35, 1);
+    color: white;
+    border: solid 1px rgba(255, 35, 35, 1);
+}
+
+/* KAN IKKE FÅ DEN I MIDTEN?
+#betalingsformer{
+    margin-top:2%;
+}*/
+
+/*Nederste footer*/
+#fobund{
+    background-color: rgba(244, 242, 233, 1);
+    padding: 1.5%;
+    color: rgba(28, 38, 102, 1);
+}
+#some{
+    justify-content: center;
+    text-align: center;
+    margin: 1%;
+    margin-top:1.5%;
+}
+
+#some img{
+    padding: 0.5%;
+}
