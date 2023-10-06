@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Skræddersy egen måltidskasse</title>
+</head>
+<body>
+    <div id="opskrifterne">
+        <section id="indhold">
+            <h1>TILPAS OG VÆLG DINE OPSKRIFTER</h1>
+            <p>Med vælg selv kassen kan du selv vælge og tilføje de opskrifter du gerne vil have hver uge. Du kan også tilpasse hvor mange personer de forskellige opskrifter skal være til.</p>
+            <div class="rakkeaftre">
+                <section class="prmaal">
+                    <img src="images/japansknudelsuppe.png" alt="ikon">
+                    <h2>Japansk Nudelsuppe</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" onclick="tilføjElement()">Tilføj</a>
+                    </div>
+                </section>
+                <section class="prmaal">
+                    <img src="images/okonomiyaki.png" alt="ikon">
+                    <h2>Okonomiyaki</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" href="#">Tilføj</a>
+                    </div>
+                </section>
+                <section class="prmaal">
+                    <img src="images/kyllingekatsu.png" alt="ikon">
+                    <h2>Kyllinge Katsu</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" href="#">Tilføj</a>
+                    </div>
+                </section>
+            </div>
+            <div class="rakkeaftre">
+                <section class="prmaal">
+                    <img src="images/nipponudon.png" alt="ikon">
+                    <h2>Nippons PEANUT UDON</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" href="#">Tilføj</a>
+                    </div>
+                </section>
+                <section class="prmaal">
+                    <img src="images/omurice.png" alt="ikon">
+                    <h2>Omu Rice</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" href="#">Tilføj</a>
+                    </div>
+                </section>
+                <section class="prmaal">
+                    <img src="images/teppanyaki.png" alt="ikon">
+                    <h2>Teppanyaki</h2>
+                    <div class="laegikurv">
+                        <label for="taldropdown"></label>
+                            <select id="taldropdown" name="tal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="3">4</option>
+                                <option value="3">5</option>
+                            </select>
+                        <p>stk.</p>
+                        <a class="tilfaej" href="#">Tilføj</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="kurvberegner">
+            <h3>SKRÆDDERSY DIN KASSE</h3>
+            <div id="prisoversigt">
+                <section id="tilvalgte">
+                    <h4>Tilvalgte opskrifter</h4>
+                    <ul id="aktiv-liste">
+                        <!-- Aktive listeelementer tilføjes dynamisk her -->
+                    </ul>
+                </section>
+                <section id="pris">
+                    <h4>Pris</h4>
+                    <ul id="aktiv-liste">
+                        <!-- Aktive listeelementer tilføjes dynamisk her -->
+                    </ul>
+                    <hr class="prik">
+                    
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
