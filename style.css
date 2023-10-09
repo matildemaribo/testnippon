@@ -50,6 +50,56 @@ hr{
 }
 
 /*Kurv section*/
+#kurvsek{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.kurvsek h1{
+    font-size: 60px;
+}
+.kurvsek h3{
+    color:rgba(28, 38, 102, 1);
+    font-size: x-large;
+}
+.kurvsek p{
+    padding-bottom:5%;
+    font-size: 20px;
+    color:rgba(28, 38, 102, 1);
+}
+#kurvsek .videre{
+}
+
+.infokurv{
+    display:flex;
+    justify-content: left;
+    padding-top: 6%;
+    padding: 1%;
+    align-items: center;
+}
+.infoimgkurv{
+    width: 20%;
+    padding-left:5%;
+}
+.infotekstkurv{
+    text-align: left;
+    line-height: 50px;
+    width: 50%;
+}
+.infotekstkurv h1{
+    font-size: 30px;
+    color:rgba(28, 38, 102, 1);
+}
+.pris{
+
+}
+
+
+
+
+/*Bekræftelse på log in - section*/
+/*Container stammer fra log in siden, men der er lavet ændringer derfor "containerfarveto"*/
 .baggrundsbillede {
     background-image: url('images/baggrund.png'); 
     min-height: 120vh;
@@ -61,9 +111,7 @@ hr{
     justify-content: center;
     align-items: center;
 }
-
-/*Bekræftelse på log in - section*/
-.containerfarve{
+.containerfarveto{
     background-color: #39448220;
     padding: 70px;
     border-radius: 20px;
@@ -72,20 +120,20 @@ hr{
     border-radius: 30px;
     text-align: center;
 }
-.containerfarve h1{
+.containerfarveto h1{
     font-size: 60px;
 }
-.containerfarve h2{
+.containerfarveto h2{
     font-size: 40px;
     color:rgba(255, 35, 35, 1);
     padding-bottom: 5%;
 }
-.containerfarve h3{
+.containerfarveto h3{
     color:rgba(28, 38, 102, 1);
     padding-bottom: 7%;
     font-size: x-large;
 }
-.containerfarve p{
+.containerfarveto p{
     padding-bottom:5%;
     font-size: 20px;
     color:rgba(28, 38, 102, 1);

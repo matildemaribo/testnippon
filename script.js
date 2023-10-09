@@ -1,38 +1,51 @@
 
-//tilmeld nyhedsbrev
-let resultat = document.getElementById("resultat");
-const fonyhedsbrev = document.getElementById("fonyhedsbrev");
-const indsetmail = document.getElementById("indsetmail")
-buttonekstra.onclick = tilMeld;
-
-function tilMeld(){
-    if(indsetmail){
-
+//Error side skriftende tekst
+// Funktion til at ændre overskriften automatisk ved indlæsning
+function skiftOverskriftAutomatisk() {
+    // Hent den gemte overskrift fra localStorage, eller brug en standardoverskrift
+    let gemtOverskrift = localStorage.getItem('gemtOverskrift');
+    if (!gemtOverskrift) {
+        gemtOverskrift = "overskrift1"; // Standardoverskrift
     }
+
+    // Tilfældigt valg af en ny overskrift (undgå gentagelser)
+    let overskrifter = ["Nippon har brændt maden på...", "Nippon arbejder hårdt i køkkenet i dag...", "Nippon tabte en dumpling på gulvet..."];
+    overskrifter = overskrifter.filter(overskrift => overskrift !== gemtOverskrift); // Fjern den gemte overskrift
+    const tilfældigIndex = Math.floor(Math.random() * overskrifter.length);
+    const nyOverskrift = overskrifter[tilfældigIndex];
+
+    // Opdater den aktive overskrift og gem den valgte overskrift i localStorage
+    const aktivOverskrift = document.getElementById('overskrift1');
+    aktivOverskrift.innerText = nyOverskrift;
+    localStorage.setItem('gemtOverskrift', nyOverskrift);
 }
 
-function seOmChecked(){
-    if(checkbox.checked){
-        resultat.innerHTML = "Checked, dvs. krydset af.";
-    } else{
-        resultat.innerHTML = "ikke checked.";
-    }
-}
+// Kald funktionen automatisk ved indlæsning af siden
+window.onload = skiftOverskriftAutomatisk;
+
+overskrifter = overskrifter.filter(function(overskrift) {
+    return overskrift !== gemtOverskrift;
+  });
+  
+
+
 
 //Billedkarrusel
 //Variable
 const billed1 = document.getElementById("billed1");
 const billed2 = document.getElementById("billed2");
 const billed3 = document.getElementById("billed3");
+const billed4 = document.getElementById("billed4");
 const hoejrePil = document.getElementById("hoejrePil");
 const venstrePil = document.getElementById("venstrePil");
 
 //Array
-const karrusell = [billed1, billed2, billed3];
+const karrusell = [billed1, billed2, billed3, billed4];
 
 karrusell[0].style.display = "block";
 karrusell[1].style.display = "none";
 karrusell[2].style.display = "none";
+karrusell[3].style.display = "none";
 
 //Bottons
 hoejrePil.addEventListener("click", naesteBillede);
@@ -52,24 +65,4 @@ function forrigeBillede(){
     karrusell.pop();
     karrusell[0].style.display = "block";
 }
-
-//Opskrifts beregning til højre
-function tilføjElement() {
-    const nyElementTekst = document.getElementById("nyt-element").value;
-    if (nyElementTekst) {
-      const liste = document.getElementById("aktiv-liste");
-      const nytElement = document.createElement("li");
-      nytElement.textContent = nyElementTekst;
-      liste.appendChild(nytElement);
-      document.getElementById("nyt-element").value = ""; // Nulstil inputfeltet
-    }
-  }
-  
-  function fjernElement() {
-    const liste = document.getElementById("aktiv-liste");
-    const sidsteElement = liste.lastChild;
-    if (sidsteElement) {
-      liste.removeChild(sidsteElement);
-    }
-  }
   
