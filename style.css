@@ -48,48 +48,25 @@ hr{
     padding-bottom: 2%;
 }
 
-/*Kurv section*/
-#kurvsek{
-    display: block;
+/*Vegansk kasse side*/
+#veganskpris{
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
-.kurvsek h1{
-    font-size: 60px;
-}
-.kurvsek h3{
+#veganskpris h3{
     color:rgba(28, 38, 102, 1);
+    text-transform: uppercase;
+    padding-bottom: 10%;
     font-size: x-large;
 }
-.kurvsek p{
-    padding-bottom:5%;
-    font-size: 20px;
-    color:rgba(28, 38, 102, 1);
-}
-
-.infokurv{
-    display:flex;
-    justify-content: left;
-    padding-top: 6%;
-    padding: 1%;
+.rakkeaftrevega{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 3%;
 }
-.infoimgkurv{
-    width: 20%;
-    padding-left:5%;
-}
-.infotekstkurv{
-    text-align: left;
-    line-height: 50px;
-    width: 50%;
-}
-.infotekstkurv h1{
-    font-size: 30px;
-    color:rgba(28, 38, 102, 1);
-}
-
-
 
 
 /*Bekræftelse på log in - section*/

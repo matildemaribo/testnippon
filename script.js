@@ -20,16 +20,32 @@ function skiftOverskriftAutomatisk() {
     localStorage.setItem('gemtOverskrift', nyOverskrift);
 }
 
+//Ekstra check af
+let checkaf = document.getElementById("checkaf");
+const buttoncheck = document.getElementById("buttoncheck");
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+function seOmChecked(){
+    let checkedCount = 0; // Tæller for markerede checkboxes
+
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checkedCount++;
+        }
+    }
+
+    if (checkedCount >= 3) { // Mindst fire checkboxes skal være markeret
+        checkaf.innerHTML = "Måltidskassen er nu tilføjet til kurven";
+        checkaf.style.color = "green"; // Ændrer tekstfarven til grøn
+    } else {
+        checkaf.innerHTML = "Afkryds mindst tre opskrifter nedenfor!";
+        checkaf.style.color = "red"; // Ændrer tekstfarven til rød
+    }
+}
+
 // Kald funktionen automatisk ved indlæsning af siden
 window.onload = skiftOverskriftAutomatisk;
-
-overskrifter = overskrifter.filter(function(overskrift) {
-    return overskrift !== gemtOverskrift;
-  });
   
-
-
-
 //Billedkarrusel
 //Variable
 const billed1 = document.getElementById("billed1");
@@ -42,10 +58,10 @@ const venstrePil = document.getElementById("venstrePil");
 //Array
 const karrusell = [billed1, billed2, billed3, billed4];
 
-karrusell[0].style.display = "block";
-karrusell[1].style.display = "none";
-karrusell[2].style.display = "none";
-karrusell[3].style.display = "none";
+billed1.style.display = "block";
+billed2.style.display = "none";
+billed3.style.display = "none";
+billed4.style.display = "none";
 
 //Bottons
 hoejrePil.addEventListener("click", naesteBillede);
