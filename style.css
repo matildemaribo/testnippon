@@ -10,24 +10,26 @@ hr{
 }
 
 /*Error site*/
-#error{
-    display:flex;
-    align-items: center;
-}
-#errorimg{
-    width: 30%;
+#baggrundsbilledeerror{
+    background-image: url('images/nippon404.png'); 
+    min-height: 120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #errortekst{
     text-align: center;
-    padding: 2%;
     line-height: 50px;
-    width: 70%;
+    width: 60%;
+    padding-left: 30%;
 }
 #errortekst h1{
-    padding-top: 5%;
     font-size: 50px;
     color:rgba(255, 35, 35, 1);
     line-height: 60px;
@@ -44,9 +46,6 @@ hr{
     font-size:large;
     color:rgba(28, 38, 102, 1);
     padding-bottom: 2%;
-}
-.skjult{
-    display: none;
 }
 
 /*Kurv section*/
@@ -68,8 +67,6 @@ hr{
     font-size: 20px;
     color:rgba(28, 38, 102, 1);
 }
-#kurvsek .videre{
-}
 
 .infokurv{
     display:flex;
@@ -90,9 +87,6 @@ hr{
 .infotekstkurv h1{
     font-size: 30px;
     color:rgba(28, 38, 102, 1);
-}
-.pris{
-
 }
 
 
